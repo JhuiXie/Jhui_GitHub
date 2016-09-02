@@ -2,23 +2,42 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace JhClass
 {
-    class Heater
+    /// <summary>
+    /// 热水器类
+    /// </summary>
+   public class Heater
     {
-        private int temp = 0;
-        public string name = "热水器";
-        public int year = 2009;
-        
+        #region 属性
         /// <summary>
-        /// 加热方法
+        /// 温度
         /// </summary>
-        public void heat()
+        private int temp = 0;
+        /// <summary>
+        /// 名称
+        /// </summary>
+        public string name = "热水器";
+        /// <summary>
+        /// 制造年份
+        /// </summary>
+        public int year = 2009;
+        #endregion
+
+    
+
+        #region 方法
+        /// <summary>
+        /// 加热
+        /// </summary>
+        public void Heat(CancellationToken token)
         {
             for (int i = 0;i <100;i++)
             {
             temp = i;
+                //当温度大于95度时，触发事件
                 if (temp > 95)
                 {
                     HeaterEventArgs e = new HeaterEventArgs(temp, name, year);
@@ -27,6 +46,9 @@ namespace JhClass
             }
         }
 
+
+        #endregion
+        
         /// <summary>
         /// 事件参数
         /// </summary>
@@ -42,12 +64,14 @@ namespace JhClass
                 this.year = year;
             }
         }
+
         /// <summary>
         /// 委托
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public delegate void HeaterEventHandler(object sender,HeaterEventArgs e);
+        public delegate void HeaterEventHandler(Heater sender,HeaterEventArgs e);
+
         /// <summary>
         /// 事件
         /// </summary>

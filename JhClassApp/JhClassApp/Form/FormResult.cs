@@ -13,6 +13,7 @@ using System.Threading;
 using DateTimeList = System.Collections.Generic.List<System.DateTime>;
 using JhClass.接口;
 using JhClass.Method;
+using JhClass.Event;
 
 namespace JhClass
 {
@@ -36,7 +37,7 @@ namespace JhClass
             theTest("a");
         }
 
-       
+
         /// <summary>
         /// 泛型，ref
         /// </summary>
@@ -245,15 +246,18 @@ Swap(ref k, ref j);
             //Unregister(null);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 测试事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnEventTest_Click(object sender, EventArgs e)
         {
+            CancellationTokenSource cts = new CancellationTokenSource();
             Heater heater = new Heater();
-            Alarm alarm = new Alarm();
+            heater.HeaterEvent += (new EventTestClass()).MakeAlarm;
 
-            heater.HeaterEvent += alarm.MakeAlarm;
-            heater.HeaterEvent += (new Alarm()).MakeAlarm;
-
-            heater.heat();
+            ThreadPool.QueueUserWorkItem(o => heater.Heat(cts.Token));
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -303,16 +307,8 @@ Swap(ref k, ref j);
         }
     }
 
-    class Alarm
-    {
 
-        public void MakeAlarm(object sender, Heater.HeaterEventArgs e)
-        {
-            Heater heater = (Heater)sender;
-            string mess = "温度：" + e.temp + "年份：" + e.year + "型号：" + e.HeaterName;
-            MessageBox.Show(mess);
-        }
-    }
+
 
     class stringTest
     {
@@ -344,10 +340,10 @@ Swap(ref k, ref j);
             CancellationTokenSource cts = new CancellationTokenSource();
             cts.Token.Register(() => MessageBox.Show("5"));
             ThreadPool.QueueUserWorkItem(o => work2(cts.Token));
-            ThreadPool.QueueUserWorkItem(new WaitCallback(work1),"1");
-            
+            ThreadPool.QueueUserWorkItem(new WaitCallback(work1), "1");
+
             cts.Cancel();
-            
+
         }
 
         private void work1(object state)
@@ -377,7 +373,7 @@ Swap(ref k, ref j);
 
                 Thread.Sleep(1);
             }
-        } 
+        }
 
     }
 }

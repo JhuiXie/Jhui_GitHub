@@ -19,3 +19,9 @@ C:\Data\代码\DEMO库\WindowsFormsApplication1\JhClassApp\obj\x86\Debug\JhClass
 C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\bin\Debug\JhClass.exe.config
 C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.exe
 C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.pdb
+C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\bin\Debug\JhClass.exe
+C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\bin\Debug\JhClass.pdb
+C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.csprojResolveAssemblyReference.cache
+C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.FormResult.resources
+C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.Properties.Resources.resources
+C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.csproj.GenerateResource.Cache

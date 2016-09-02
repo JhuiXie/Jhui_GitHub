@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Event\EventClass.cs" />
+    <Compile Include="Event\EventTestClass.cs" />
     <Compile Include="Form\FormResult.cs">
       <SubType>Form</SubType>
     </Compile>
