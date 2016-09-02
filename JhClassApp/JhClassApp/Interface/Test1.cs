@@ -18,4 +18,5 @@ namespace JhClass.接口
            return "I";
        }
     }
+    //测试GitHub
 }
