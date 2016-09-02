@@ -8,6 +8,6 @@ namespace JhClass.接口
     interface ITest1<T>
     {
         string TestIMethod();
-      
+    
     }
 }
