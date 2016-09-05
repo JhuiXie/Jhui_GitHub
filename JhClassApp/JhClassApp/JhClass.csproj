@@ -49,24 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Event\EventClass.cs" />
-    <Compile Include="Event\EventTestClass.cs" />
-    <Compile Include="Form\FormResult.cs">
+    <Compile Include="Delegate\DelegateTest.cs" />
+    <Compile Include="Event\EventTest.cs" />
+    <Compile Include="Forms\FormResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormResult.Designer.cs">
+    <Compile Include="Forms\FormResult.Designer.cs">
       <DependentUpon>FormResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="Event\EventTest.cs" />
     <Compile Include="Event\Heater.cs" />
-    <Compile Include="Method\Methods.cs" />
+    <Compile Include="Methods\Methods.cs" />
     <Compile Include="Model\Member.cs" />
-    <Compile Include="Method\MethodExtra.cs" />
+    <Compile Include="Methods\MethodExtra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interface\ITest1.cs" />
     <Compile Include="Interface\Test1.cs" />
-    <EmbeddedResource Include="Form\FormResult.resx">
+    <EmbeddedResource Include="Forms\FormResult.resx">
       <DependentUpon>FormResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
