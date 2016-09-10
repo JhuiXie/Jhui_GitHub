@@ -25,6 +25,6 @@ C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.cs
 C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.Properties.Resources.resources
 C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.csproj.GenerateResource.Cache
 C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.Forms.FormResult.resources
-C:\Users\XieJiahui\Desktop\JhClassApp\JhClassApp\bin\Debug\JhClass.exe.config
-C:\Users\XieJiahui\Desktop\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.exe
-C:\Users\XieJiahui\Desktop\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.pdb
+C:\Data\Codes\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\bin\Debug\JhClass.exe.config
+C:\Data\Codes\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.exe
+C:\Data\Codes\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.pdb
