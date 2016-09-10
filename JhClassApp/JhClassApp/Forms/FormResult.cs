@@ -10,7 +10,6 @@ using JhClass.Interface;
 //下面一行为定义一个List<T>的DateTime类型的简化写法
 using DateTimeList = System.Collections.Generic.List<System.DateTime>;
 using JhClass.Delegates;
-using static JhClass.Delegates.DelegateTest;
 using System.Text;
 
 namespace JhClass.Forms
@@ -43,7 +42,7 @@ namespace JhClass.Forms
         {
             using (DelegateTest test = new DelegateTest())
             {
-                StringDelegate dgt1 = new StringDelegate(doubleString);
+               DelegateTest.StringDelegate dgt1 = new JhClass.Delegates.DelegateTest.StringDelegate(doubleString);
                 dgt1 += plusA2String;
 
                 // 用这个变量来保存输出的字符串
@@ -53,7 +52,7 @@ namespace JhClass.Forms
                 // 获取一个委托数组，其中每个元素都引用链中的委托
                 foreach (var item in dgt1.GetInvocationList())
                 {
-                    StringDelegate tempObj = item as StringDelegate;
+                    DelegateTest.StringDelegate tempObj = item as DelegateTest.StringDelegate;
                     try
                     {
                         string str = "test\n";
