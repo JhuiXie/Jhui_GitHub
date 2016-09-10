@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 
-namespace JhClass.Interface
+namespace JhClass.接口
 {
     class Test1<Object> : ITest1<Object>
     {

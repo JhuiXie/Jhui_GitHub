@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace JhClass.Interface
+namespace JhClass.接口
 {
     interface ITest1<T>
     {

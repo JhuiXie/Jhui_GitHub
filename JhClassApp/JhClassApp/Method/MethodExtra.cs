@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace JhClass.Methods
+namespace JhClass
 {
     /// <summary>
     /// 此静态类用于存放扩展方法

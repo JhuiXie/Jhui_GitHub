@@ -1,4 +1,4 @@
-﻿namespace JhClass.Forms
+﻿namespace JhClass
 {
     partial class FormResult
     {
@@ -31,10 +31,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.btnEventTest = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.btnDelegateTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -69,16 +71,49 @@
             this.richTextBox2.TabIndex = 2;
             this.richTextBox2.Text = "";
             // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(765, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "绑定邮件事件";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(765, 41);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "解绑邮件事件";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // btnEventTest
             // 
             this.btnEventTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEventTest.Location = new System.Drawing.Point(765, 12);
+            this.btnEventTest.Location = new System.Drawing.Point(765, 70);
             this.btnEventTest.Name = "btnEventTest";
             this.btnEventTest.Size = new System.Drawing.Size(97, 23);
             this.btnEventTest.TabIndex = 5;
-            this.btnEventTest.Text = "热水器事件测试";
+            this.btnEventTest.Text = "运行邮件测试";
             this.btnEventTest.UseVisualStyleBackColor = true;
             this.btnEventTest.Click += new System.EventHandler(this.btnEventTest_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Location = new System.Drawing.Point(765, 99);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(97, 23);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Test事件";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -102,26 +137,17 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // btnDelegateTest
-            // 
-            this.btnDelegateTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelegateTest.Location = new System.Drawing.Point(762, 41);
-            this.btnDelegateTest.Name = "btnDelegateTest";
-            this.btnDelegateTest.Size = new System.Drawing.Size(97, 23);
-            this.btnDelegateTest.TabIndex = 9;
-            this.btnDelegateTest.Text = "委托测试";
-            this.btnDelegateTest.UseVisualStyleBackColor = true;
-            this.btnDelegateTest.Click += new System.EventHandler(this.btnDelegateTestClick);
-            // 
             // FormResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 492);
-            this.Controls.Add(this.btnDelegateTest);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.btnEventTest);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
@@ -136,10 +162,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnEventTest;
+        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button btnDelegateTest;
     }
 }
 

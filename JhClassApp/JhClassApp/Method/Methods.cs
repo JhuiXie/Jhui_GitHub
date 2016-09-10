@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JhClass.Methods
+namespace JhClass.Method
 {
-    public static class MethodsClass
+    public static class Methods
     {
         /// <summary>
         /// ref方法
