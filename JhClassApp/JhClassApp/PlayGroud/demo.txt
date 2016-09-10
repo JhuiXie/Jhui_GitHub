@@ -1,0 +1,23 @@
+﻿using System;
+
+
+            namespace DynamicCodeGenerate
+            
+            {
+            
+                public class HelloWorld
+            
+                {
+            
+                    public string OutPut()
+            
+                    {
+            
+                       //  return "a";
+            System.Windows.Forms.MessageBox.Show("a");
+			 return "a";
+                    }
+            
+                }
+            
+            }
