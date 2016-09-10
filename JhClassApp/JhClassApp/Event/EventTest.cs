@@ -2,45 +2,39 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
-namespace JhClass.委托及事件
+namespace JhClass.Event
 {
-    class EventTest
+    /// <summary>
+    /// 热水器的测试自定义事件测试
+    /// 自定义事件需要自定义事件的参数，委托及事件
+    /// 在调用时，将方法MakeAlarm注册到事件上
+    /// 条件满足时，委托中的方法Heat就会回调注册的方法MakeAlarm
+    /// </summary>
+    public class HeaterEventTestClass
     {
-        private string message1 = "This is a message";
-        private string message2 = "This is another message";
-        private string message3 = "";
-
-        public class TestEventArgs : EventArgs
+        /// <summary>
+        /// 用来传递取消操作的通知
+        /// </summary>
+        private CancellationTokenSource _cts;
+        public HeaterEventTestClass(CancellationTokenSource cts)
         {
-            public readonly string mess1;
-            public readonly string mess2;
-            public readonly string mess3; 
-            public  TestEventArgs(string mess1,string mess2,string mess3)
-            {
-                this.mess1 = mess1;
-                this.mess2 = mess2;
-                this.mess3 = mess3;
-            }
+            _cts = cts;
         }
 
-        public delegate void TestEventHandler(object sender,TestEventArgs e);
-
-        public event TestEventHandler testEvent;
-
-        public void test()
+        /// <summary>
+        /// 需要将该方法注册到事件中
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void MakeAlarm(Heater sender, Heater.HeaterEventArgs e)
         {
-            int n = 0;
-            for (int i = 0; i < 101;i++ )
-            {
-                n += i;
-                if (i > 99)
-                {
-                    message3 = "The result is:" + n;
-                    TestEventArgs e = new TestEventArgs(message1, message2, message3);
-                    testEvent(this, e);
-                }
-            }
+            string mess = "温度：" + e.HeaterTemp + "年份：" + e.HeaterYear + "型号：" + e.HeaterName;
+            //终止所有由_cts接收取消通知的方法(需要在方法内写相应的终止代码)
+            _cts.Cancel();
+            System.Windows.Forms.MessageBox.Show(mess);
         }
     }
 }
