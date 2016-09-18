@@ -22,8 +22,8 @@ $RECYCLE.BIN/
 *.suo
 *.cache
 *.pdb
-bin
-obj
+\bin\
+\obj\
 
 # =========================
 # Operating System Files
