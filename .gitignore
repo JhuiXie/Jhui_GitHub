@@ -22,12 +22,10 @@ $RECYCLE.BIN/
 *.suo
 *.cache
 *.pdb
-#\JhClassApp\JhClassApp\bin\*
-#JhClassApp\JhClassApp\bin\*
-JhClassApp/JhClassApp/bin/*
-JhClassApp/JhClassApp/obj/*
-JhClassApp\JhClassApp\obj\*
-\obj\
+#JhClassApp/JhClassApp/bin/*
+#JhClassApp/JhClassApp/obj/*
+bin/
+obj/
 
 # =========================
 # Operating System Files
