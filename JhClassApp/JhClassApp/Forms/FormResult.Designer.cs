@@ -123,7 +123,7 @@
             this.btnPlayGroud.TabIndex = 10;
             this.btnPlayGroud.Text = "PlayGroud";
             this.btnPlayGroud.UseVisualStyleBackColor = true;
-            this.btnPlayGroud.Click += new System.EventHandler(this.btnPlayGroud_Click);
+            //this.btnPlayGroud.Click += new System.EventHandler(this.btnPlayGroud_Click);
             // 
             // FormResult
             // 
