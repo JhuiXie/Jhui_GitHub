@@ -61,6 +61,7 @@
     <Compile Include="Methods\Methods.cs" />
     <Compile Include="Model\Member.cs" />
     <Compile Include="Methods\MethodExtra.cs" />
+    <Compile Include="PlayGroud\CodeProvider.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interface\ITest1.cs" />
@@ -91,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Indexes.txt" />
+    <Content Include="PlayGroud\demo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

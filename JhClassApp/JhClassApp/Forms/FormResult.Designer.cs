@@ -35,6 +35,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.btnDelegateTest = new System.Windows.Forms.Button();
+            this.btnPlayGroud = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -105,7 +106,7 @@
             // btnDelegateTest
             // 
             this.btnDelegateTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelegateTest.Location = new System.Drawing.Point(762, 41);
+            this.btnDelegateTest.Location = new System.Drawing.Point(765, 41);
             this.btnDelegateTest.Name = "btnDelegateTest";
             this.btnDelegateTest.Size = new System.Drawing.Size(97, 23);
             this.btnDelegateTest.TabIndex = 9;
@@ -113,11 +114,23 @@
             this.btnDelegateTest.UseVisualStyleBackColor = true;
             this.btnDelegateTest.Click += new System.EventHandler(this.btnDelegateTestClick);
             // 
+            // btnPlayGroud
+            // 
+            this.btnPlayGroud.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPlayGroud.Location = new System.Drawing.Point(765, 311);
+            this.btnPlayGroud.Name = "btnPlayGroud";
+            this.btnPlayGroud.Size = new System.Drawing.Size(97, 23);
+            this.btnPlayGroud.TabIndex = 10;
+            this.btnPlayGroud.Text = "PlayGroud";
+            this.btnPlayGroud.UseVisualStyleBackColor = true;
+            this.btnPlayGroud.Click += new System.EventHandler(this.btnPlayGroud_Click);
+            // 
             // FormResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 492);
+            this.Controls.Add(this.btnPlayGroud);
             this.Controls.Add(this.btnDelegateTest);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -140,6 +153,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button btnDelegateTest;
+        private System.Windows.Forms.Button btnPlayGroud;
     }
 }
 
