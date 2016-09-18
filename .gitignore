@@ -22,10 +22,10 @@ $RECYCLE.BIN/
 *.suo
 *.cache
 *.pdb
-\JhClassApp\JhClassApp\bin\*
-JhClassApp\JhClassApp\bin\*
+#\JhClassApp\JhClassApp\bin\*
+#JhClassApp\JhClassApp\bin\*
 JhClassApp/JhClassApp/bin/*
-\bin\
+JhClassApp/JhClassApp/obj/*
 \obj\
 
 # =========================
