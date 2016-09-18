@@ -26,6 +26,7 @@ $RECYCLE.BIN/
 #JhClassApp/JhClassApp/obj/*
 bin/
 obj/
+.vs/
 
 # =========================
 # Operating System Files
