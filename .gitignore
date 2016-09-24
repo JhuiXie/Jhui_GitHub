@@ -33,6 +33,18 @@ JhClassApp\JhClassApp\obj\*
 # Windows shortcuts
 *.lnk
 
+# .NET
+*.exe
+*.suo
+*.cache
+*.pdb
+#\JhClassApp\JhClassApp\bin\*
+#JhClassApp\JhClassApp\bin\*
+JhClassApp/JhClassApp/bin/*
+JhClassApp/JhClassApp/obj/*
+JhClassApp\JhClassApp\obj\*
+\obj\
+
 # =========================
 # Operating System Files
 # =========================
