@@ -11,7 +11,6 @@ using JhClass.Interface;
 using DateTimeList = System.Collections.Generic.List<System.DateTime>;
 using JhClass.Delegates;
 using System.Text;
-using JhClass.PlayGound;
 
 namespace JhClass.Forms
 {
@@ -43,7 +42,7 @@ namespace JhClass.Forms
         {
             using (DelegateTest test = new DelegateTest())
             {
-                DelegateTest.StringDelegate dgt1 = new JhClass.Delegates.DelegateTest.StringDelegate(doubleString);
+               DelegateTest.StringDelegate dgt1 = new JhClass.Delegates.DelegateTest.StringDelegate(doubleString);
                 dgt1 += plusA2String;
 
                 // 用这个变量来保存输出的字符串
@@ -290,14 +289,6 @@ Swap(ref k, ref j);
         {
             ThreadTest tt = new ThreadTest();
             tt.threadWork();
-        }
-
-        private void btnPlayGroud_Click(object sender, EventArgs e)
-        {
-            string a = CodeProvider.codeRun(richTextBox1.Text);
-
-            richTextBox2.Text = a;
-
         }
     }
 
