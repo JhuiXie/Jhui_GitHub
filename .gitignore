@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+#ºöÂÔÄ¿Â¼
+bin/
+
 # Folder config file
 Desktop.ini
 
@@ -13,6 +16,19 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.suo
+
+# .NET
+*.exe
+*.suo
+*.cache
+*.pdb
+#\JhClassApp\JhClassApp\bin\*
+#JhClassApp\JhClassApp\bin\*
+JhClassApp/JhClassApp/bin/*
+JhClassApp/JhClassApp/obj/*
+JhClassApp\JhClassApp\obj\*
+\obj\
 
 # Windows shortcuts
 *.lnk
