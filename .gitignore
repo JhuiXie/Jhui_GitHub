@@ -34,12 +34,9 @@ $RECYCLE.BIN/
 *.suo
 *.cache
 *.pdb
-#\JhClassApp\JhClassApp\bin\*
-#JhClassApp\JhClassApp\bin\*
-JhClassApp/JhClassApp/bin/*
-JhClassApp/JhClassApp/obj/*
-JhClassApp\JhClassApp\obj\*
-\obj\
+bin/
+obj/
+.vs/
 
 # =========================
 # Operating System Files
@@ -69,3 +66,4 @@ JhClassApp\JhClassApp\obj\*
 Network Trash Folder
 Temporary Items
 .apdisk
+*.suo
