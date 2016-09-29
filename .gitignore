@@ -2,8 +2,6 @@
 Thumbs.db
 ehthumbs.db
 
-#ºöÂÔÄ¿Â¼
-bin/
 
 # Folder config file
 Desktop.ini
@@ -18,13 +16,6 @@ $RECYCLE.BIN/
 *.msp
 *.suo
 
-# .NET
-*.exe
-*.suo
-*.cache
-*.pdb
-\obj\
-\bin\
 
 # Windows shortcuts
 *.lnk
@@ -37,6 +28,8 @@ $RECYCLE.BIN/
 bin/
 obj/
 .vs/
+
+
 
 # =========================
 # Operating System Files
