@@ -21,8 +21,6 @@ $RECYCLE.BIN/
 *.exe
 *.suo
 *.cache
-.suo
-.cache
 *.pdb
 bin/
 obj/
@@ -56,3 +54,4 @@ obj/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.suo
