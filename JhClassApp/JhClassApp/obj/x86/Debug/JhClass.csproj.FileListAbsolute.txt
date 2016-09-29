@@ -35,3 +35,4 @@ C:\Data\Codes\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.Pro
 C:\Data\Codes\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.csproj.GenerateResource.Cache
 C:\Data\Codes\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\bin\Debug\JhClass.exe
 C:\Data\Codes\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\bin\Debug\JhClass.pdb
+C:\Data\代码\GitHub\Jhui_GitHub\JhClassApp\JhClassApp\obj\x86\Debug\JhClass.csprojResolveAssemblyReference.cache
