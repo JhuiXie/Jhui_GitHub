@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-using System.Linq;
+using JhClass.Delegates;
 using JhClass.Event;
-using JhClass.Methods;
 using JhClass.Interface;
-
+using JhClass.Methods;
+using JhClass.PlayGound;
 //下面一行为定义一个List<T>的DateTime类型的简化写法
 using DateTimeList = System.Collections.Generic.List<System.DateTime>;
-using JhClass.Delegates;
-using System.Text;
-using JhClass.PlayGound;
 
 namespace JhClass.Forms
 {
@@ -41,9 +40,11 @@ namespace JhClass.Forms
         }
         private void btnDelegateTestClick(object sender, EventArgs e)
         {
+            //使用using在调用完后会自动回收垃圾
             using (DelegateTest test = new DelegateTest())
             {
-                DelegateTest.StringDelegate dgt1 = new JhClass.Delegates.DelegateTest.StringDelegate(doubleString);
+                //实例化委托
+                DelegateTest.StringDelegate dgt1 = new DelegateTest.StringDelegate(doubleString);
                 dgt1 += plusA2String;
 
                 // 用这个变量来保存输出的字符串
